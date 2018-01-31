@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>771</width>
+      <height>721</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="Stats">
+     <attribute name="title">
+      <string>Stats</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="geometry">
+       <rect>
+        <x>11</x>
+        <y>11</y>
+        <width>721</width>
+        <height>207</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Summary Data</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_4">
+         <property name="text">
+          <string>Ethnicity:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2">
+        <widget class="QComboBox" name="charBirth">
+         <item>
+          <property name="text">
+           <string>Mercury</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Venus</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Earth</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Mars</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Jupiter (Callisto)</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Jupiter (Europa)</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Jupiter (Ganymede)</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Saturn (Dione)</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Saturn (Enceladus)</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Saturn (Hyperion)</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Saturn (Rhea)</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Saturn (Tethys)</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Saturn (Titan)</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Uranus</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Neptune</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Kuiper Belt</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="1" column="4">
+        <widget class="QSpinBox" name="charAge"/>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>Birthplace: </string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="label_7">
+         <property name="text">
+          <string>Psychological Traits: </string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="label_6">
+         <property name="text">
+          <string>Physical Traits: </string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>Character Name: </string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_5">
+         <property name="text">
+          <string>Specialty: </string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="2">
+        <widget class="QLineEdit" name="charPhys"/>
+       </item>
+       <item row="5" column="2">
+        <widget class="QLineEdit" name="chaPsych"/>
+       </item>
+       <item row="3" column="2">
+        <widget class="QLineEdit" name="charSpec"/>
+       </item>
+       <item row="1" column="3">
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>Age: </string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QLineEdit" name="charEth"/>
+       </item>
+       <item row="0" column="2" colspan="3">
+        <widget class="QLineEdit" name="charName"/>
+       </item>
+      </layout>
+      <zorder>label_7</zorder>
+      <zorder>label_7</zorder>
+      <zorder>label_6</zorder>
+      <zorder>label_5</zorder>
+      <zorder>charSpec</zorder>
+      <zorder>charPhys</zorder>
+      <zorder>chaPsych</zorder>
+      <zorder>label_3</zorder>
+      <zorder>charBirth</zorder>
+      <zorder>label_4</zorder>
+      <zorder>charAge</zorder>
+      <zorder>label</zorder>
+      <zorder>charName</zorder>
+      <zorder>label_2</zorder>
+      <zorder>charEth</zorder>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>220</y>
+        <width>161</width>
+        <height>230</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Core Stats</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_8">
+         <property name="text">
+          <string>Awareness: </string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QSpinBox" name="charAwr"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_9">
+         <property name="text">
+          <string>Cleverness: </string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_10">
+         <property name="text">
+          <string>Demeanor: </string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="charGra">
+         <property name="text">
+          <string>Grace: </string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="Per">
+         <property name="text">
+          <string>Perserverance: </string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="label_13">
+         <property name="text">
+          <string>Physique</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <widget class="QSpinBox" name="charPhy"/>
+       </item>
+       <item row="1" column="1">
+        <widget class="QSpinBox" name="charClv"/>
+       </item>
+       <item row="2" column="1">
+        <widget class="QSpinBox" name="charDem"/>
+       </item>
+       <item row="3" column="1">
+        <widget class="QSpinBox" name="spinBox_4"/>
+       </item>
+       <item row="4" column="1">
+        <widget class="QSpinBox" name="charPsv"/>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Skills">
+     <attribute name="title">
+      <string>Skills</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="Equip">
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <attribute name="title">
+      <string>Equip</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="Qualities">
+     <attribute name="title">
+      <string>Qualities</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="Combat">
+     <attribute name="title">
+      <string>Combat</string>
+     </attribute>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionNew_Character"/>
+    <addaction name="actionLoad_Character"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionHelp"/>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionHelp">
+   <property name="text">
+    <string>Help</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="actionNew_Character">
+   <property name="text">
+    <string>Start a New Character</string>
+   </property>
+  </action>
+  <action name="actionLoad_Character">
+   <property name="text">
+    <string>View a Character</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

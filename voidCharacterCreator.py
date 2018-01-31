@@ -22,8 +22,9 @@ class aboutWindow(QWidget):
         self.layout = QVBoxLayout()
         
         self.layout.addWidget(QLabel("The Void Character Creation Program"))
-        self.layout.addWidget(QLabel("Code by Andrew Roderigues"))
         self.layout.addWidget(QLabel("The Void is copyright of Wildfire"))
+        self.layout.addWidget(QLabel("Originally written by Andrew Roderigues"))
+        self.layout.addWidget(QLabel("Help provided by Sapphire"))
         
         self.setLayout(self.layout)
         
@@ -56,18 +57,18 @@ class characterTabs(QWidget):
         
         #Stats Tab
         #Set statSheet layout
-        self.statSheet.layout = QVBoxLayout()
+        self.statSheet.layout = QGridLayout(self)
         
         #Add content to layout of statSheet
-        self.statSheet.layout.addWidget(QLabel("Character Name:"))
-        self.statSheet.layout.addWidget(QLineEdit())
+        self.statSheet.layout.addWidget(QLabel("Character Name:"),0,0)
+        self.statSheet.layout.addWidget(QLineEdit(),0,1)
         
         #Skills Tab
-        self.skillsSheet.layout = QGridLayout()
+        self.skillsSheet.layout = QGridLayout(self)
         
         #Add content to skillsSheet
-        self.skillsSheet.layout.addWidget(QLabel("Skill Name:"))
-        self.skillsSheet.layout.addWidget(QLineEdit())
+        self.skillsSheet.layout.addWidget(QLabel("Skill Name:"),0,0)
+        self.skillsSheet.layout.addWidget(QLineEdit(),0,1)
         
         #Gear Tab
         self.equipSheet.layout = QGridLayout()
@@ -91,7 +92,7 @@ class mainWindow(QMainWindow):
         self.initUI()
         self.statusBar()
         
-        # Initializing the Menubar
+        # Initializing the menuBar
         mainMenu = self.menuBar() 
         fileMenu = mainMenu.addMenu('File')
         
@@ -123,11 +124,12 @@ class mainWindow(QMainWindow):
         mainMenu.addAction(aboutButton)
     
     def aboutWin(self):
-        # call aboutWindow
+        #Call aboutWindow
         self.window = aboutWindow()
         self.window.show()
     
     def initUI(self):
+        #Creating and showing the main window
         self.setWindowTitle(self.title)
         self.setFixedSize(800,800)
         self.central_wid = QWidget()
